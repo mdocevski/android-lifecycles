@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.android.lifecycles.step5;
+package com.example.android.lifecycles.step5
 
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
+import android.arch.lifecycle.MutableLiveData
+import android.arch.lifecycle.ViewModel
 
 /**
  * A ViewModel used in step 5.
  */
-public class SeekBarViewModel extends ViewModel {
+class SeekBarViewModel : ViewModel() {
+    val mSeekbarValue = MutableLiveData<Int>()
 
-    public MutableLiveData<Integer> seekbarValue = new MutableLiveData<>();
 }
